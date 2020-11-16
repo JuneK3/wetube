@@ -85,3 +85,4 @@ build
 #video folder
 videos/
 uploads/
+static/
