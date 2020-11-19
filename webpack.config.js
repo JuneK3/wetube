@@ -13,6 +13,7 @@ module.exports = {
   entry: {
     app: ['@babel/polyfill', ENTRY_FILE],
   },
+
   module: {
     rules: [
       {
@@ -61,4 +62,9 @@ module.exports = {
       filename: '[name].css',
     }),
   ],
+  // devServer: {
+  //   publicPath: '/static',
+  //   hot: true,
+  //   port: 4000,
+  // },
 };
