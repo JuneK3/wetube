@@ -23,3 +23,6 @@ Youtube Clone Project with Nomad Coders
   - Search Video
   - AJAX Comments
   - View Count
+
+## ToDo
+- Add Social Login of KAKAO 
