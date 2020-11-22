@@ -25,4 +25,5 @@ Youtube Clone Project with Nomad Coders
   - View Count
 
 ## ToDo
-- Add Social Login of KAKAO 
+- Add Social Login of KAKAO
+- Update Frontend part to React

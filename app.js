@@ -33,7 +33,11 @@ connect();
 
 const CookieStore = MongoStore(session);
 
-app.use(helmet());
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
 app.set('view engine', 'pug');
 app.use('/static', express.static('static'));
 app.use('/uploads', express.static('uploads'));

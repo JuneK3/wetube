@@ -9,7 +9,17 @@ const multerVideo = multer({
   }),
 });
 
+const multerAvatar = multer({
+  storage: multer.diskStorage({
+    destination(req, file, done) {
+      done(null, 'uploads/avatars/');
+    },
+  }),
+});
+
 export const uploadVideo = multerVideo.single('videoFile');
+
+export const uploadAvatar = multerAvatar.single('avatar');
 
 export const onlyPublic = (req, res, next) => {
   if (req.user) {
@@ -30,7 +40,6 @@ export const onlyPrivate = (req, res, next) => {
 export const localsMiddleware = (req, res, next) => {
   res.locals.siteName = 'WeTube';
   res.locals.routes = routes;
-  res.locals.loggedUser = req.user || null;
-  // console.log(req.user);
+  res.locals.loggedUser = req.user || {};
   next();
 };
