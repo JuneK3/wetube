@@ -1,29 +1,35 @@
 # Wetube
 Youtube Clone Project with Nomad Coders
 
+## ToDo
+- [ ] Add Social Login of KAKAO
+- [ ] Update Frontend part to React
+- [ ] Customize Frontend part
+- [ ] Customize Video Player
+- [ ] Start other version with MySQL
+
 ## Stacks
 - Node, Express
-- Pug, Scss (일단 완성후 React, Redux로 업데이트 예정)
-- webpack
 - passport.js
 - MongoDB, mongoose
+- webpack
+- Pug, Scss
+- React, Redux (later)
 
 ## Implements
 - Users
-  - User Authentication
-  - Facebook Login
+  - User Authentication with passport
   - Github Login
   - User Profile
   - Log In
   - Log Out
   
 - Videos
-  - Video Upload
+  - Video Upload with multer
   - Video Recording
   - Search Video
   - AJAX Comments
   - View Count
-
-## ToDo
-- Add Social Login of KAKAO
-- Update Frontend part to React
+  
+## Deploy
+- Heroku
