@@ -3,6 +3,8 @@ Youtube Clone Project with Nomad Coders
 
 ## ToDo
 - [ ] Add Social Login of KAKAO
+- [ ] Update comment UI
+- [ ] Add deleting comment
 - [ ] Update Frontend part to React
 - [ ] Customize Frontend part
 - [ ] Customize Video Player
