@@ -86,3 +86,6 @@ build
 videos/
 uploads/
 static/
+
+#aws config
+awsconfig.json

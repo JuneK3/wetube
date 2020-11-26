@@ -9,7 +9,7 @@ const handleVideoData = (event) => {
   const { data: videoFile } = event;
   const link = document.createElement('a');
   link.href = URL.createObjectURL(videoFile);
-  link.download = 'recorded.mkv';
+  link.download = 'recorded.webm';
   document.body.appendChild(link);
   link.click();
 };

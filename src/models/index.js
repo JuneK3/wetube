@@ -5,7 +5,7 @@ const connect = () => {
     mongoose.set('debug', true);
   }
   mongoose.connect(
-    process.env.MONGO_URL,
+    process.env.MONGO_URL_PROD,
     {
       authSource: 'admin',
       useNewUrlParser: true,
