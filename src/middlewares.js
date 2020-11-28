@@ -1,10 +1,7 @@
-import path from 'path';
 import multer from 'multer';
 import multerS3 from 'multer-s3';
 import aws from 'aws-sdk';
 import routes from './routes';
-
-aws.config.loadFromPath(path.join(__dirname, 'awsconfig.json'));
 
 const s3 = new aws.S3();
 
