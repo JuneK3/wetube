@@ -51,7 +51,7 @@
     "copyAll": "cp -R src/static build && cp -R src/views build",
     "build": "npm run build:server && npm run build:client && npm run copyAll",
     "prebuild": "rm -rf build",
-    "start": "node build/app.js",
+    "start": "cross-env PRODUCTION=true node build/app.js",
     "prestart": "npm run build"
   },
   "devDependencies": {
