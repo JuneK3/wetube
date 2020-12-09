@@ -68,6 +68,8 @@ export const postGithubLogin = (req, res) => {
 
 export const logout = (req, res) => {
   req.logout();
+  req.session = null;
+  res.clearCookie('connect.sid');
   res.redirect(routes.home);
 };
 

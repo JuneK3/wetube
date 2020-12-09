@@ -58,6 +58,7 @@ app.use(
       secure: false,
     },
     store: new CookieStore({ mongooseConnection: mongoose.connection }),
+    unset: 'destroy',
   })
 );
 app.use(passport.initialize());

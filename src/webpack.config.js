@@ -13,7 +13,6 @@ module.exports = {
   entry: {
     app: ['@babel/polyfill', ENTRY_FILE],
   },
-
   module: {
     rules: [
       {
