@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require('autoprefixer');
 
 const MODE = process.env.WEBPACK_ENV;
-const ENTRY_FILE = path.resolve(__dirname, 'assets', 'js', 'main.js');
+const ENTRY_FILE = path.join(__dirname, 'assets', 'js', 'main.js');
 const OUTPUT_DIR = path.join(__dirname, 'static');
 
 module.exports = {
@@ -61,9 +61,4 @@ module.exports = {
       filename: '[name].css',
     }),
   ],
-  // devServer: {
-  //   publicPath: '/static',
-  //   hot: true,
-  //   port: 4000,
-  // },
 };

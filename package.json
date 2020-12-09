@@ -45,7 +45,7 @@
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/app.js --delay 2 --ignore '.scss' --ignore 'static'",
-    "dev:client": "cross-env WEBPACK_ENV=development webpack -w",
+    "dev:client": "cd src && cross-env WEBPACK_ENV=development webpack -w",
     "build:server": "babel src --out-dir build --ignore 'src/assets','src/static','src/webpack.config.js'",
     "build:client": "cd src && cross-env WEBPACK_ENV=production webpack",
     "copyAll": "cp -R src/static build && cp -R src/views build",
